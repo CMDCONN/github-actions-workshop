@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ main ]
 
-    
+
 jobs:
   # JOB 1: TEST
   test:
@@ -29,6 +29,17 @@ jobs:
       - name: Run Linter
         run: npx standard
 
+
+
+  cow:
+    name: Cow Says Moo
+    runs-on: ubuntu-latest
+    steps:
+    - name: Send it up!
+      uses: mscoutermarsh/cowsays-action@master
+      with:
+        text: 'MoOOOOooooOooOoOoOOoOooOOOOOOO'
+        color: 'red'
   # # JOB 2: DEPLOY (Only runs if Test passes)
   # deploy:
   #   needs: test  # This is the "gatekeeper" - deploy waits for test to pass
