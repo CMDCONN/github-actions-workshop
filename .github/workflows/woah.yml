@@ -1,0 +1,15 @@
+on:
+  push
+
+name: Cowsays
+
+jobs:
+  cow:
+    name: Cowsays
+    runs-on: ubuntu-latest
+    steps:
+    - name: Send it up!
+      uses: mscoutermarsh/cowsays-action@master
+      with:
+        text: 'MoOOOOooooOooOoOoOOoOooOOOOOOO'
+        color: 'red'
