@@ -18,15 +18,14 @@ jobs:
         id: math_answer
         shell: bash
         run: |
-          exm="example, you can remove me"
           ans=$((${{ github.event.inputs.math_number }} + 10))
           echo "You need to pass this value: $ans"
           echo "EXAMPLE=$exm" >> "$GITHUB_OUTPUT" #TODO edit here
 
       - name: Show the answer
         run: |
-          echo "The Answer to the maths result is: "
-          echo "$ans" #TODO edit here
+          ans=$((${{ github.event.inputs.math_number }} + 10))
+          echo "The Answer to the maths result is: $ans"
 
 
 
