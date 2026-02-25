@@ -25,8 +25,8 @@ jobs:
 
       - name: Show the answer
         run: |
-          echo "The Answer to the maths result is:"
-          echo "___________" #TODO edit here
+          echo "The Answer to the maths result is: "
+          echo "${{ steps.math_answer.outputs.ans }}" #TODO edit here
 
 
 

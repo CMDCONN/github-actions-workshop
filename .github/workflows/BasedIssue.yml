@@ -12,3 +12,4 @@ jobs:
         run: |
           echo "Brand new issue, pain in the ass."
           echo "The pain is called: ${{ github.event.issue.title }}"
+          echo "The pain was caused by: ${{ github.event.actor }}"

@@ -29,8 +29,6 @@ jobs:
       - name: Run Linter
         run: npx standard
 
-
-
   cow:
     name: Cow Says Moo
     runs-on: ubuntu-latest
