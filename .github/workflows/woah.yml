@@ -5,7 +5,7 @@ name: Cowsays
 
 jobs:
   cow:
-    name: Cowsays
+    name: Cow Says Moo
     runs-on: ubuntu-latest
     steps:
     - name: Send it up!
